@@ -1,0 +1,17 @@
+{
+  "arduino.additionalUrls": [
+    "https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json"
+  ],
+  "arduino.logLevel": "verbose",
+
+  // Arduino.h を有効化するためにincludeパスを追加する
+  // ref. https://zenn.dev/axt/articles/1d98d2c4d16b3a
+  "C_Cpp.default.includePath": [
+    "/opt/arduino-1.8.19/libraries/**",
+    "/opt/arduino-1.8.19/hardware/**",
+    "/opt/arduino-1.8.19/hardware/arduino/avr/cores/arduino"
+  ],
+  // Serial のエラーを解決するために USBCON を定義する
+  // ref. https://github.com/microsoft/vscode-arduino/issues/808#issuecomment-490417186
+  "C_Cpp.default.defines": ["USBCON"]
+}
