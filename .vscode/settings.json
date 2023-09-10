@@ -1,9 +1,4 @@
 {
-  "arduino.additionalUrls": [
-    "https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json"
-  ],
-  "arduino.logLevel": "verbose",
-
   // Arduino.h を有効化するためにincludeパスを追加する
   // ref. https://zenn.dev/axt/articles/1d98d2c4d16b3a
   "C_Cpp.default.includePath": [
