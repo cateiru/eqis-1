@@ -1,4 +1,8 @@
 {
+  // VSCodeでもArduino IDE と同じようなことができるが、
+  // Linux環境でのデプロイがうまく行かなかったため Arduino IDE を使うことにした
+  // なので、ino の include解決するための設定のみ書いてある
+
   // Arduino.h を有効化するためにincludeパスを追加する
   // ref. https://zenn.dev/axt/articles/1d98d2c4d16b3a
   "C_Cpp.default.includePath": [
@@ -8,5 +12,17 @@
   ],
   // Serial のエラーを解決するために USBCON を定義する
   // ref. https://github.com/microsoft/vscode-arduino/issues/808#issuecomment-490417186
-  "C_Cpp.default.defines": ["USBCON"]
+"C_Cpp.default.defines": [
+    "USBCON"
+],
+"files.associations": {
+    "array": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp"
+}
 }
